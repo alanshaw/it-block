@@ -16,5 +16,24 @@
     "test": "standard"
   },
   "author": "Alan Shaw",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanshaw/it-block.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alanshaw/it-block/issues"
+  },
+  "homepage": "https://github.com/alanshaw/it-block#readme",
+  "keywords": [
+    "block",
+    "chunk",
+    "fixed",
+    "async",
+    "iterator",
+    "iterable"
+  ]
 }
