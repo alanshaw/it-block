@@ -8,7 +8,6 @@
     "it-pipe": "^1.0.1"
   },
   "devDependencies": {
-    "nyc": "^14.1.1",
     "standard": "^14.3.1"
   },
   "scripts": {
