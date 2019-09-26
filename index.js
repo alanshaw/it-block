@@ -1,4 +1,4 @@
-const BufferList = require('bl')
+const BufferList = require('bl/BufferList')
 
 module.exports = (size, options) => {
   if (typeof size === 'object') {
