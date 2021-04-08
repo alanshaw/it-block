@@ -4,7 +4,7 @@
   "description": "transform input into equally-sized blocks of output using async iterators",
   "main": "index.js",
   "dependencies": {
-    "bl": "^4.0.0",
+    "bl": "^5.0.0",
     "it-pipe": "^1.0.1"
   },
   "devDependencies": {
