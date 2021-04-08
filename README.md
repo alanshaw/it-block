@@ -1,6 +1,6 @@
 # it-block
 
-[![Dependency Status](https://david-dm.org/alanshaw/it-block.svg?style=flat-square)](https://david-dm.org/alanshaw/it-block) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
+[![Dependency Status](https://status.david-dm.org/gh/alanshaw/it-block.svg?style=flat-square)](https://david-dm.org/alanshaw/it-block) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 
 > Transform input into equally-sized chunks as output
 
