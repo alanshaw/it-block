@@ -1,6 +1,8 @@
 # it-block
 
-[![Dependency Status](https://status.david-dm.org/gh/alanshaw/it-block.svg?style=flat-square)](https://david-dm.org/alanshaw/it-block) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
+[![Build Status](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml/badge.svg?branch=master)](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml)
+[![Dependencies Status](https://david-dm.org/alanshaw/it-block/status.svg)](https://david-dm.org/alanshaw/it-block)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > Transform input into equally-sized chunks as output
 
@@ -17,8 +19,8 @@ npm install it-block
 ### Example
 
 ```js
-const block = require('it-block')
-const pipe = require('it-pipe')
+import { block } from 'it-block'
+import { pipe } from 'it-pipe'
 
 const chr = s => '\\x' + pad(s.charCodeAt(0).toString(16), 2)
 const pad = (s, n) => Array(n - s.length + 1).join('0') + s
@@ -54,13 +56,12 @@ buf[16]=fur\x0a\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
 ## API
 
 ```js
-const block = require('it-block')
+import { block } from 'it-block'
 ```
 
-### `const b = block(opts)`
 ### `const b = block(size, opts)`
 
-Create a new [transform](https://gist.github.com/alanshaw/591dc7dd54e4f99338a347ef568d6ee9#transform-it) `b` that yields chunks of length `size`/`opts.size`.
+Create a new [transform](https://gist.github.com/alanshaw/591dc7dd54e4f99338a347ef568d6ee9#transform-it) `b` that yields chunks of length `size`.
 
 **Note**: chunks that are output are [`BufferList`](https://www.npmjs.com/package/bl) objects NOT `Buffer`s.
 

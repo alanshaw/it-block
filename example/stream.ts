@@ -1,14 +1,12 @@
-'use strict'
-
-const block = require('../')
-const pipe = require('it-pipe')
+import { block } from 'it-block'
+import { pipe } from 'it-pipe'
 
 const chr = s => '\\x' + pad(s.charCodeAt(0).toString(16), 2)
 const pad = (s, n) => Array(n - s.length + 1).join('0') + s
 
 pipe(
   process.stdin,
-  block({ size: 16 }),
+  block(16),
   async source => {
     for await (const buf of source) {
       const str = buf.toString().replace(/[\x00-\x1f]/g, chr) // eslint-disable-line
