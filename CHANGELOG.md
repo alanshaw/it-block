@@ -1,3 +1,14 @@
+## [5.0.0](https://github.com/alanshaw/it-block/compare/v4.0.0...v5.0.0) (2022-02-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* where `BufferList`s were returned, now `Uint8ArrayList`s are
+
+### Bug Fixes
+
+* swap bl for uint8arraylist ([#7](https://github.com/alanshaw/it-block/issues/7)) ([0d2bebc](https://github.com/alanshaw/it-block/commit/0d2bebc66197f3113ac21e4d21a22ab60e57decc))
+
 ## [4.0.0](https://github.com/alanshaw/it-block/compare/v3.0.0...v4.0.0) (2022-01-13)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "it-block",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "transform input into equally-sized blocks of output using async iterators",
   "type": "module",
   "types": "./dist/src/index.d.ts",
