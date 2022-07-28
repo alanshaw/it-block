@@ -16,13 +16,13 @@ export function block (size: number, options?: Options): (source: Source<Uint8Ar
 
       while (buffer.length >= size) {
         if (buffer.length === size) {
-          yield buffer.slice()
+          yield buffer.subarray()
           buffer = new Uint8ArrayList()
           break
         }
 
-        yield buffer.slice(0, size)
-        buffer = buffer.subarray(size)
+        yield buffer.subarray(0, size)
+        buffer.consume(size)
       }
     }
 
@@ -31,7 +31,7 @@ export function block (size: number, options?: Options): (source: Source<Uint8Ar
         buffer.append(new Uint8Array(size - buffer.length))
       }
 
-      yield buffer.slice()
+      yield buffer.subarray()
     }
   }
 }
