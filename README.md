@@ -1,18 +1,27 @@
-# it-block
+# it-block <!-- omit in toc -->
 
-[![Build Status](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml/badge.svg?branch=master)](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml)
-[![Dependencies Status](https://david-dm.org/alanshaw/it-block/status.svg)](https://david-dm.org/alanshaw/it-block)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![codecov](https://img.shields.io/codecov/c/github/alanshaw/it-block.svg?style=flat-square)](https://codecov.io/gh/alanshaw/it-block)
+[![CI](https://img.shields.io/github/workflow/status/alanshaw/it-block/test%20&%20maybe%20release/master?style=flat-square)](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml)
 
-> Transform input into equally-sized chunks as output
+> transform input into equally-sized blocks of output using async iterators
 
-An async iterators version of [block-stream](https://npmjs.org/package/block-stream).
+## Table of contents <!-- omit in toc -->
+
+- [Install](#install)
+- [Usage](#usage)
+  - [Example](#example)
+- [API](#api)
+  - [`const b = block(size, opts)`](#const-b--blocksize-opts)
+- [License](#license)
+- [Contribution](#contribution)
 
 ## Install
 
-```sh
-npm install it-block
+```console
+$ npm i it-block
 ```
+
+An async iterators version of [block-stream](https://npmjs.org/package/block-stream).
 
 ## Usage
 
@@ -69,4 +78,11 @@ When `opts.noPad` is `true`, do not zero-pad the last chunk.
 
 ## License
 
-MIT
+Licensed under either of
+
+- Apache 2.0, ([LICENSE-APACHE](LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT ([LICENSE-MIT](LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
+
+## Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.

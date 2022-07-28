@@ -1,4 +1,4 @@
-import { expect } from 'aegir/utils/chai.js'
+import { expect } from 'aegir/chai'
 import { pipe } from 'it-pipe'
 import all from 'it-all'
 import { block } from '../src/index.js'
