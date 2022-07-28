@@ -39,8 +39,8 @@ pipe(
   block({ size: 16 }),
   async source => {
     for await (const buf of source) {
-      const str = new TextDecoder().decode(buf).replace(/[\x00-\x1f]/g, chr)
-      console.log('buf[' + buf.length + ']=' + str)
+      const str = new TextDecoder().decode(buf.slice()).replace(/[\x00-\x1f]/g, chr)
+      console.log('buf[' + buf.byteLength + ']=' + str)
     }
   }
 )
