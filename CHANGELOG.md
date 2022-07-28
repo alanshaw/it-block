@@ -1,3 +1,14 @@
+## [6.0.0](https://github.com/alanshaw/it-block/compare/v5.0.1...v6.0.0) (2022-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* values yielded from this module are now Uint8ArrayLists
+
+### Bug Fixes
+
+* make return type lists instead of copying memory ([#27](https://github.com/alanshaw/it-block/issues/27)) ([94e3738](https://github.com/alanshaw/it-block/commit/94e373811303e2f37219cd20ab98e1deb46f7bad))
+
 ## [5.0.1](https://github.com/alanshaw/it-block/compare/v5.0.0...v5.0.1) (2022-07-28)
 
 
