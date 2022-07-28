@@ -79,6 +79,10 @@
               "release": "patch"
             },
             {
+              "type": "deps",
+              "release": "patch"
+            },
+            {
               "type": "test",
               "release": "patch"
             },
