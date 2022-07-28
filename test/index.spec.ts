@@ -1,6 +1,7 @@
 import { expect } from 'aegir/chai'
 import { pipe } from 'it-pipe'
 import all from 'it-all'
+import map from 'it-map'
 import { block } from '../src/index.js'
 
 describe('it-block', () => {
@@ -10,6 +11,7 @@ describe('it-block', () => {
     const result = await pipe(
       input,
       block(2),
+      source => map(source, l => l.subarray()),
       async (source) => await all(source)
     )
 
@@ -26,6 +28,7 @@ describe('it-block', () => {
     const result = await pipe(
       input,
       block(4),
+      source => map(source, l => l.subarray()),
       async (source) => await all(source)
     )
 
@@ -41,6 +44,7 @@ describe('it-block', () => {
     const result = await pipe(
       input,
       block(2),
+      source => map(source, l => l.subarray()),
       async (source) => await all(source)
     )
 
@@ -56,6 +60,7 @@ describe('it-block', () => {
     const result = await pipe(
       input,
       block(2, { noPad: true }),
+      source => map(source, l => l.subarray()),
       async (source) => await all(source)
     )
 

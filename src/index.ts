@@ -5,8 +5,8 @@ interface Options {
   noPad?: boolean
 }
 
-export function block (size: number, options?: Options): (source: Source<Uint8Array>) => AsyncIterable<Uint8Array> {
-  return async function * (source: Source<Uint8Array>) {
+export function block (size: number, options?: Options): (source: Source<Uint8Array | Uint8ArrayList>) => AsyncIterable<Uint8ArrayList> {
+  return async function * (source: Source<Uint8Array | Uint8ArrayList>) {
     let buffer = new Uint8ArrayList()
     let started = false
 
@@ -16,12 +16,12 @@ export function block (size: number, options?: Options): (source: Source<Uint8Ar
 
       while (buffer.length >= size) {
         if (buffer.length === size) {
-          yield buffer.subarray()
+          yield buffer.sublist()
           buffer = new Uint8ArrayList()
           break
         }
 
-        yield buffer.subarray(0, size)
+        yield buffer.sublist(0, size)
         buffer.consume(size)
       }
     }
@@ -31,7 +31,7 @@ export function block (size: number, options?: Options): (source: Source<Uint8Ar
         buffer.append(new Uint8Array(size - buffer.length))
       }
 
-      yield buffer.subarray()
+      yield buffer.sublist()
     }
   }
 }

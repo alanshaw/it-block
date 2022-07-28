@@ -39,7 +39,7 @@ pipe(
   block({ size: 16 }),
   async source => {
     for await (const buf of source) {
-      const str = buf.toString().replace(/[\x00-\x1f]/g, chr)
+      const str = new TextDecoder().decode(buf).replace(/[\x00-\x1f]/g, chr)
       console.log('buf[' + buf.length + ']=' + str)
     }
   }
@@ -70,9 +70,9 @@ import { block } from 'it-block'
 
 ### `const b = block(size, opts)`
 
-Create a new [transform](https://gist.github.com/alanshaw/591dc7dd54e4f99338a347ef568d6ee9#transform-it) `b` that yields chunks of length `size`.
+Create a new [transform](https://www.npmjs.com/package/it-stream-types) `b` that yields chunks of length `size`.
 
-**Note**: chunks that are output are [`BufferList`](https://www.npmjs.com/package/bl) objects NOT `Buffer`s.
+**Note**: chunks that are output are [`Uint8ArrayList`](https://www.npmjs.com/package/uint8arraylist) objects NOT `Uint8Array`s.
 
 When `opts.noPad` is `true`, do not zero-pad the last chunk.
 
