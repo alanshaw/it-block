@@ -1,3 +1,16 @@
+## [5.0.1](https://github.com/alanshaw/it-block/compare/v5.0.0...v5.0.1) (2022-07-28)
+
+
+### Dependencies
+
+* **dev:** update aegir to 37.x ([#25](https://github.com/alanshaw/it-block/issues/25)) ([f928619](https://github.com/alanshaw/it-block/commit/f9286191f39f8aa6f01ac6139e62edb541edfcce))
+* update uint8arraylist to 2.x ([#26](https://github.com/alanshaw/it-block/issues/26)) ([1a53030](https://github.com/alanshaw/it-block/commit/1a5303092d131df6676e429737ff140d560cefe5))
+
+
+### Trivial Changes
+
+* deps should cause a ppatch release ([07fea18](https://github.com/alanshaw/it-block/commit/07fea180571477daff434ec568d301fda5785666))
+
 ## [5.0.0](https://github.com/alanshaw/it-block/compare/v4.0.0...v5.0.0) (2022-02-16)
 
 
