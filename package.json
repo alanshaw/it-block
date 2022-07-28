@@ -145,7 +145,7 @@
   },
   "dependencies": {
     "it-stream-types": "^1.0.4",
-    "uint8arraylist": "^1.2.0"
+    "uint8arraylist": "^2.0.0"
   },
   "devDependencies": {
     "aegir": "^37.4.6",
