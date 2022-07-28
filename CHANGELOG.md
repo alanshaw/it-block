@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/alanshaw/it-block/compare/v6.0.0...v6.0.1) (2022-07-28)
+
+
+### Documentation
+
+* update example ([c9be698](https://github.com/alanshaw/it-block/commit/c9be6987cecc06eaaa99d2bf66baa595bae3af9c))
+
 ## [6.0.0](https://github.com/alanshaw/it-block/compare/v5.0.1...v6.0.0) (2022-07-28)
 
 
