@@ -1,3 +1,11 @@
+## [6.0.2](https://github.com/alanshaw/it-block/compare/v6.0.1...v6.0.2) (2023-08-14)
+
+
+### Trivial Changes
+
+* add or force update .github/workflows/js-test-and-release.yml ([#58](https://github.com/alanshaw/it-block/issues/58)) ([3ff30f0](https://github.com/alanshaw/it-block/commit/3ff30f0dabd75dc1bd8d15cdafa0d8a3debf55c0))
+* delete templates [skip ci] ([#57](https://github.com/alanshaw/it-block/issues/57)) ([fba5613](https://github.com/alanshaw/it-block/commit/fba561387f2252b4316165c1af2b174d8f038b2c))
+
 ## [6.0.1](https://github.com/alanshaw/it-block/compare/v6.0.0...v6.0.1) (2022-07-28)
 
 

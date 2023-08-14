@@ -1,6 +1,6 @@
 {
   "name": "it-block",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "transform input into equally-sized blocks of output using async iterators",
   "author": "Alan Shaw",
   "license": "Apache-2.0 OR MIT",
