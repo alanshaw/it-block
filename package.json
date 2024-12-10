@@ -148,7 +148,7 @@
     "release": "aegir release"
   },
   "dependencies": {
-    "it-stream-types": "^1.0.4",
+    "it-stream-types": "^2.0.1",
     "uint8arraylist": "^2.0.0"
   },
   "devDependencies": {
