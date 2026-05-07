@@ -1,3 +1,14 @@
+## [7.0.0](https://github.com/alanshaw/it-block/compare/v6.0.2...v7.0.0) (2026-05-07)
+
+### ⚠ BREAKING CHANGES
+
+* the returned `Uint8ArrayList` have a generic type that reflects the internal buffer type
+
+### Bug Fixes
+
+* Uint8Arrays are generic ([#61](https://github.com/alanshaw/it-block/issues/61)) ([6fd58a3](https://github.com/alanshaw/it-block/commit/6fd58a3ab8ad9faba0a663d82be1bc13a87d2d17))
+* update deps ([#59](https://github.com/alanshaw/it-block/issues/59)) ([5bde428](https://github.com/alanshaw/it-block/commit/5bde428b251b2ed28f7db4d4a1b804fb48420afa))
+
 ## [6.0.2](https://github.com/alanshaw/it-block/compare/v6.0.1...v6.0.2) (2023-08-14)
 
 
