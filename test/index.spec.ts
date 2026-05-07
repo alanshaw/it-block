@@ -1,8 +1,8 @@
 import { expect } from 'aegir/chai'
-import { pipe } from 'it-pipe'
 import all from 'it-all'
 import map from 'it-map'
-import { block } from '../src/index.js'
+import { pipe } from 'it-pipe'
+import { block } from '../src/index.ts'
 
 describe('it-block', () => {
   it('should emit uniform block sizes (2b)', async () => {
@@ -12,7 +12,7 @@ describe('it-block', () => {
       input,
       block(2),
       source => map(source, l => l.subarray()),
-      async (source) => await all(source)
+      async (source) => all(source)
     )
 
     expect(result).to.deep.equal([
@@ -29,7 +29,7 @@ describe('it-block', () => {
       input,
       block(4),
       source => map(source, l => l.subarray()),
-      async (source) => await all(source)
+      async (source) => all(source)
     )
 
     expect(result).to.deep.equal([
@@ -45,7 +45,7 @@ describe('it-block', () => {
       input,
       block(2),
       source => map(source, l => l.subarray()),
-      async (source) => await all(source)
+      async (source) => all(source)
     )
 
     expect(result).to.deep.equal([
@@ -61,7 +61,7 @@ describe('it-block', () => {
       input,
       block(2, { noPad: true }),
       source => map(source, l => l.subarray()),
-      async (source) => await all(source)
+      async (source) => all(source)
     )
 
     expect(result).to.deep.equal([
