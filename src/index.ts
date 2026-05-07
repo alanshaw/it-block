@@ -1,6 +1,6 @@
 import { Uint8ArrayList } from 'uint8arraylist'
-import type { Source } from 'it-stream-types'
 import { withArrayBuffer } from 'uint8arrays/with-array-buffer'
+import type { Source } from 'it-stream-types'
 
 interface Options {
   noPad?: boolean
