@@ -12,6 +12,10 @@
   "bugs": {
     "url": "https://github.com/alanshaw/it-block/issues"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "keywords": [
     "async",
     "block",
@@ -20,28 +24,19 @@
     "iterable",
     "iterator"
   ],
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
-  },
   "type": "module",
   "types": "./dist/src/index.d.ts",
   "files": [
     "src",
-    "dist/src",
+    "dist",
     "!dist/test",
     "!**/*.tsbuildinfo"
   ],
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "import": "./dist/src/index.js"
-    }
-  },
-  "eslintConfig": {
-    "extends": "ipfs",
-    "parserOptions": {
-      "sourceType": "module"
+      "import": "./dist/src/index.js",
+      "module-sync": "./dist/src/index.js"
     }
   },
   "release": {
@@ -71,19 +66,15 @@
               "release": "patch"
             },
             {
-              "type": "chore",
-              "release": "patch"
-            },
-            {
               "type": "docs",
               "release": "patch"
             },
             {
-              "type": "deps",
+              "type": "test",
               "release": "patch"
             },
             {
-              "type": "test",
+              "type": "deps",
               "release": "patch"
             },
             {
@@ -130,7 +121,15 @@
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/github",
-      "@semantic-release/git"
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ]
+        }
+      ]
     ]
   },
   "scripts": {
@@ -148,13 +147,13 @@
     "release": "aegir release"
   },
   "dependencies": {
-    "it-stream-types": "^1.0.4",
+    "it-stream-types": "^2.0.4",
     "uint8arraylist": "^2.0.0"
   },
   "devDependencies": {
-    "aegir": "^37.4.6",
-    "it-all": "^1.0.6",
-    "it-map": "^1.0.6",
-    "it-pipe": "^2.0.2"
+    "aegir": "^48.0.1",
+    "it-all": "^3.0.11",
+    "it-map": "^3.1.6",
+    "it-pipe": "^3.0.1"
   }
 }

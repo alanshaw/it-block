@@ -1,9 +1,23 @@
-# it-block <!-- omit in toc -->
+# it-block
 
 [![codecov](https://img.shields.io/codecov/c/github/alanshaw/it-block.svg?style=flat-square)](https://codecov.io/gh/alanshaw/it-block)
-[![CI](https://img.shields.io/github/workflow/status/alanshaw/it-block/test%20&%20maybe%20release/master?style=flat-square)](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/alanshaw/it-block/js-test-and-release.yml?branch=master\&style=flat-square)](https://github.com/alanshaw/it-block/actions/workflows/js-test-and-release.yml?query=branch%3Amaster)
 
 > transform input into equally-sized blocks of output using async iterators
+
+# Install
+
+```console
+$ npm i it-block
+```
+
+## Browser `<script>` tag
+
+Loading this module through a script tag will make its exports available as `ItBlock` in the global namespace.
+
+```html
+<script src="https://unpkg.com/it-block/dist/index.min.js"></script>
+```
 
 ## Table of contents <!-- omit in toc -->
 
@@ -14,14 +28,6 @@
   - [`const b = block(size, opts)`](#const-b--blocksize-opts)
 - [License](#license)
 - [Contribution](#contribution)
-
-## Install
-
-```console
-$ npm i it-block
-```
-
-An async iterators version of [block-stream](https://npmjs.org/package/block-stream).
 
 ## Usage
 
@@ -76,13 +82,13 @@ Create a new [transform](https://www.npmjs.com/package/it-stream-types) `b` that
 
 When `opts.noPad` is `true`, do not zero-pad the last chunk.
 
-## License
+# License
 
 Licensed under either of
 
-- Apache 2.0, ([LICENSE-APACHE](LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT ([LICENSE-MIT](LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
+- Apache 2.0, ([LICENSE-APACHE](https://github.com/alanshaw/it-block/LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT ([LICENSE-MIT](https://github.com/alanshaw/it-block/LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
 
-## Contribution
+# Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
